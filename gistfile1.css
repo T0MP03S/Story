@@ -1,21 +1,16 @@
-/* Applies to the entire body of the HTML document (except where overridden by more specific
-selectors). */
-body {
-  margin: 25px;
-  background-color: rgb(240,240,240);
-  font-family: arial, sans-serif;
-  font-size: 14px;
+body, html {
+  height: 100%;
 }
 
-/* Applies to all <h1>...</h1> elements. */
-h1 {
-  font-size: 35px;
-  font-weight: normal;
-  margin-top: 5px;
+.bg { 
+  /* The image used */
+  background-image: url("img_girl.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-/* Applies to all elements with <... class="someclass"> specified. */
-.someclass { color: red; }
-
-/* Applies to the element with <... id="someid"> specified. */
-#someid { color: green; }
