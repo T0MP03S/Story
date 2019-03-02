@@ -1,1 +1,19 @@
-#FFFFFF
+<html>
+ 
+  <title>T0MP03S</title>
+  
+   <body>
+    
+    <h1>This is My first website</h1>
+  
+  </body>
+  
+      <style>
+            body {
+              background-color:#00004d;
+              color:#00004d;
+              text-align:center;
+            }
+      </style>
+  
+</html>
