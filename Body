@@ -1,20 +1,19 @@
 <html>
-<Head>
-  <title>T0MP03S</title>
-      <style>
-            body {
-              background-color:#00004d;
-              color:#00004d;
-              text-align:center;
-            }
-      </style>
-</Head>
+ 
+  <title>First website</title>
+  
    <body>
     
-    <h1>This is my website just for fun</h1>
+    <h1>This is my first github page</h1>
   
   </body>
   
-      
+      <style>
+            body {
+              background-color:green;
+              color:#fff;
+              text-align:center;
+            }
+      </style>
   
 </html>
