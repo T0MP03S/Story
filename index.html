@@ -1,38 +1,30 @@
 <html>
-<script>
-    var repeat=1 //enter 0 to not repeat scrolling after 1 run, othersise, enter 1
-    var title=document.title
-    var leng=title.length
-    var start=1
-    function titlemove() 
-    {
-        titl=title.substring(start, leng) + title.substring(0, start)
-        document.title=titl
-        start++
-        if (start==leng+1`enter code here`) 
-        {
-            start=0
-            if (repeat==0)
-            return
-        }
-        setTimeout("titlemove()",500)
-    }
-    if (document.title)
-    titlemove(T0MP03S.XYZ)
-</script>
-  <title>T0MP03S.XYZ </title>
-  
-  <body>
-  <h1> T0MP03S.xyz </h1>
-  <body background="https://www.psdgraphics.com/wp-content/uploads/2018/03/gaming-background.jpg">
-  </body>
-  
+<Head>
+  <title>T0MP03S</title>
       <style>
             body {
-              background-color:#333333;
+              background-color:081B33;
               color:#fff;
               text-align:center;
             }
       </style>
+</Head>
+   <body>
+    
+    <h1>This is my website just for fun</h1>
+  
+  </body>
+    
+    <script type='text/javascript'> 
+title = "T0MP03S.xyz  ";
+position = 0;
+function scrolltitle() {
+    document.title = title.substring(position, title.length) + title.substring(0, position); 
+    position++;
+    if (position > title.length) position = 0;
+    titleScroll = window.setTimeout(scrolltitle,170);
+}
+scrolltitle();
+</script>
   
 </html>
