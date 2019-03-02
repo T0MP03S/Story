@@ -4,7 +4,7 @@
   
   <body>
   <h1> T0MP03S.xyz </h1>
-
+  <body background="">
   </body>
   
       <style>
@@ -14,48 +14,17 @@
               text-align:center;
             }
       </style>
-<script type="text/javascript">
-                var msg  = document.title ="T0MP03S";
-                var speed = 180;
-                var endChar = " ";
-                var pos = 0;
-
-                function moveTitle()
-                {
-                     var ml = msg.length;
-
-                    title = msg.substr(pos,ml) + endChar + msg.substr(0,pos);
-                  document.title = title;
-
-                  pos++;
-                  if (pos > ml) pos=0;
-                  window.setTimeout("moveTitle()",speed);
-                }
-
-                moveTitle();
-
-body, html {
-  height: 100%;
-}
-
-.bg { 
-  /* The image used */
-  background-image: url("img_girl.jpg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-            </script>
+    
+      <script type='text/javascript'> 
+title = "T0MP03S  ";
+position = 0;
+function scrolltitle() {
+    document.title = title.substring(position, title.length) + title.substring(0, position); 
+    position++;
+    if (position > title.length) position = 0;
+    titleScroll = window.setTimeout(scrolltitle,170);
 }
 scrolltitle();
 </script>
-
-
   
 </html>
