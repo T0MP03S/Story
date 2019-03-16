@@ -5,11 +5,13 @@
      
 </Head>
    <body>
+     <button id="myBtn" onclick="myFunction()">Pause</button>
+     
      <video autoplay muted loop id="Video">
   <source src="./images/witchblades - lil peep x lil tracy.mp4" type="video/mp4">
 </video>
     
-     <button id="myBtn" onclick="myFunction()">Pause</button>
+     
      <form>
        <input class="MyButton" type="button" value="Instagram" onclick="window.location.href='https://www.instagram.com/t0mp03s/'">
        <input class="MyButton1" type="button" value="Twitch" onclick="window.location.href='https://www.twitch.tv/t0mp03s/'">
@@ -22,6 +24,14 @@
 </iframe>
      
 <style>
+  
+  #Video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
   
   input.MyButton {
 width: 150px;
@@ -167,6 +177,22 @@ border: 0px solid #fff;
   </a>
     
     <script type='text/javascript'> 
+      var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+      
+      
+      
+      
 title = "T0MP03S   ";
 position = 0;
 function scrolltitle() {
